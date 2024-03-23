@@ -13,7 +13,7 @@ struct LisitingImageCarouselView: View {
         TabView{
             ForEach(images, id:\.self){
                 image in Image(image).resizable()
-                    .scaledToFit()
+                    .scaledToFill()
             }
         }.tabViewStyle(.page)
     }
